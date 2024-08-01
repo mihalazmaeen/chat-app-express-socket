@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Chat App</title>
-</head>
-<body>
-    <h1>NoChat</h1>
+  </head>
+  <body>
+    <h1 class="title">NoChat</h1>
     <div class="main">
-        <div class="name">
-            <span><i class="fa fa-user"></i></span>
-            <input type="text" id="name-input" class="name=input" value="anonymous"
-            maxlength="30"/>
-        </div>
-        <ul class="message-container" id="message-container">
-            <li class="message-left">
-                <p class="message">
-                    dummy message 
-                    <span>Dummy User 26 July 2024</span>
-                </p>
-            </li>
-              <li class="message-right">
-                <p class="message">
-                    dummy reply 
-                    <span>Dummy Replier 26 July 2024</span>
-                </p>
-            </li>
-            <li class="message-feedback">
-                <p class="feedback" id="feedback">
-                    Someone is replying
-                </p>
-            </li>
-        </ul>
-        <form class="message-form" id="message-form">
-            <input type="text" name="message" id="message-input" class="message-input"/>
-            <div class="v-divider"></div>
-            <button type="submit" class="send-button">
-                send<span><i class="fas fa-paper-plane"></i></span>
-            </button>
-        </form>
-        <h3 class="clients-total" id="clients-total">
-            Total Clients: 2
-        </h3>
-
+      <div class="name">
+        <span><i class="fa fa-user"></i></span>
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+          maxlength="30"
+        />
+      </div>
+      <ul class="message-container" id="message-container">
+        <li class="message-left">
+          <p class="message">
+            dummy message
+            <span>Dummy User 26 July 2024</span>
+          </p>
+        </li>
+        <li class="message-right">
+          <p class="message">
+            dummy reply
+            <span>Dummy Replier 26 July 2024</span>
+          </p>
+        </li>
+        <li class="message-feedback">
+          <p class="feedback" id="feedback">Someone is replying</p>
+        </li>
+      </ul>
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+          send<span><i class="fas fa-paper-plane"></i></span>
+        </button>
+      </form>
+      
     </div>
-</body>
+    <h3 class="clients-total" id="clients-total">Total Clients: 2</h3>
+  </body>
 </html>
